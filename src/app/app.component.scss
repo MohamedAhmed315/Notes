@@ -1,0 +1,93 @@
+form {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    justify-content: center;
+
+    .input-group-text {
+        img {
+            width: 25px;
+        }
+    }
+
+    input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        &:active,
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-color: #ced4da;
+        }
+    }
+
+    button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 39px;
+    }
+}
+
+.paper {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+        background-size: 30px 30px;
+        border-right: 3px solid #D44147;
+        box-sizing: border-box;
+    }
+
+    .paper-content {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        bottom: 30px;
+        left: 60px;
+        background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+        background-size: 30px 30px;
+
+        li {
+            width: 100%;
+            max-width: 100%;
+            line-height: 30px;
+            margin-bottom: 4px;
+            padding: 0 10px;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            color: mediumblue;
+            font-family: 'Handlee', cursive;
+            font-weight: bold;
+            font-size: 18px;
+            box-sizing: border-box;
+            z-index: 1;
+
+            .delete {
+                color: rgb(255, 23, 23);
+                cursor: pointer;
+            }
+        }
+    }
+}
