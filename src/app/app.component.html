@@ -24,7 +24,7 @@
         </li>
       </ol>
 
-      <button class="btn btn-danger" (click)="clear_all()">Clear All</button>
+      <button *ngIf="viewClearBtn" id="clear-all-btn" class="btn btn-danger" (click)="clear_all()">Clear All</button>
     </div>
   </div>
 
